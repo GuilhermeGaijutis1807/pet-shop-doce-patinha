@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doce Patinha | Pet Shop & Estética Cautelosa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+
+  <!-- ================= TOPO ================= -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#inicio" class="logo">Doce<span>Patinha</span> 🐾</a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#clube">Clube Patinha</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+        </ul>
+      </nav>
+      <a href="#agenda" class="btn btn-rosa">Agendar Horário</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <p class="eyebrow">Carinho e cuidado desde 2019</p>
+          <h1>Amor em cada banho,<br>atenção em cada <em>detalhe</em>.</h1>
+          <p class="hero-descricao">Estética animal com produtos hipoalergênicos, atendimento veterinário dedicado e um ambiente alegre pensado para o bem-estar do seu pet.</p>
+          <div class="hero-botoes">
+            <a href="#agenda" class="btn btn-rosa">Agendar agora</a>
+            <a href="#servicos" class="btn btn-contorno">Ver serviços</a>
+          </div>
+          <ul class="hero-numeros">
+            <li><strong>7</strong><span>anos de carinho</span></li>
+            <li><strong>+5 mil</strong><span>pets atendidos</span></li>
+            <li><strong>5.0</strong><span>avaliação média</span></li>
+          </ul>
+        </div>
+        <figure class="hero-imagem">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" alt="Cachorrinho feliz e bem cuidado no Pet Shop Doce Patinha">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS (Flexbox) ================= -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Cuidados Especiais</h2>
+          <p>Cada atendimento é feito com paciência e produtos selecionados para deixar o pelos do seu amigo cheirosos e macios.</p>
+        </header>
+
+        <div class="cards-servicos">
+          <article class="card-servico">
+            <span class="card-numero">01</span>
+            <h3>Banho & Tosa Higiênica</h3>
+            <p>Banho morno com shampoo neutro, secagem silenciosa, limpeza de ouvidos e tosa das patinhas.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 65</strong><small>50 min</small></div>
+              <a href="#agenda" class="btn btn-contorno btn-pequeno">Agendar</a>
+            </div>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-numero">02</span>
+            <h3>Tosa Completa / Bebê</h3>
+            <p>Corte estilizado conforme a raça, tosa na tesoura e acabamento impecável assinado pela Fernanda.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 95</strong><small>1h 20m</small></div>
+              <a href="#agenda" class="btn btn-contorno btn-pequeno">Agendar</a>
+            </div>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-numero">03</span>
+            <h3>Consulta Veterinária</h3>
+            <p>Avaliação médica geral, protocolo de vacinação e check-up com o Dr. Rafael Costa.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 150</strong><small>40 min</small></div>
+              <a href="#agenda" class="btn btn-contorno btn-pequeno">Agendar</a>
+            </div>
+          </article>
+
+          <article class="card-servico card-destaque">
+            <span class="card-selo">Mais Pedido</span>
+            <span class="card-numero">04</span>
+            <h3>Combo Spa Patinha</h3>
+            <p>Banho premium, hidratação de pelagem, tosa higiênica e corte de unhas com lacinho de cortesia.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 130</strong><small>1h 30m</small></div>
+              <a href="#agenda" class="btn btn-rosa btn-pequeno">Agendar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CLUBE (Flexbox) ================= -->
+    <section class="secao secao-suave" id="clube">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Clube Doce Patinha</p>
+          <h2>Planos mensais de cuidados</h2>
+          <p>Assine e garanta que seu pet esteja sempre limpo, saudável e cheiroso durante todo o mês.</p>
+        </header>
+
+        <div class="planos">
+          <article class="plano">
+            <h3>Plano Fofura</h3>
+            <p class="plano-preco"><strong>R$ 119</strong>/mês</p>
+            <ul class="plano-lista">
+              <li>2 Banhos por mês</li>
+              <li>1 Tosa higiênica</li>
+              <li>10% em produtos da loja</li>
+            </ul>
+            <a href="#contato" class="btn btn-contorno">Assinar Fofura</a>
+          </article>
+
+          <article class="plano plano-destaque">
+            <span class="card-selo">Recomendado</span>
+            <h3>Plano VIPatinha</h3>
+            <p class="plano-preco"><strong>R$ 199</strong>/mês</p>
+            <ul class="plano-lista">
+              <li>4 Banhos por mês</li>
+              <li>2 Tosas higiênicas ou 1 completa</li>
+              <li>Hidratação de pelos quinzenal</li>
+              <li>15% de desconto com Dr. Rafael</li>
+            </ul>
+            <a href="#contato" class="btn btn-rosa">Assinar VIPatinha</a>
+          </article>
+
+          <article class="plano">
+            <h3>Plano Super Cão</h3>
+            <p class="plano-preco"><strong>R$ 289</strong>/mês</p>
+            <ul class="plano-lista">
+              <li>Banhos semanais ilimitados</li>
+              <li>Tosa completa livre</li>
+              <li>Transporte Busca & Leva gratuito</li>
+              <li>20% de desconto em toda a loja</li>
+            </ul>
+            <a href="#contato" class="btn btn-contorno">Assinar Super Cão</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA (Grid - Bento) ================= -->
+    <section class="secao" id="galeria">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Galeria</p>
+          <h2>Nossos Clientes Felizes</h2>
+          <p>Um pouco da rotina de banhos, tosas e consultas do Doce Patinha.</p>
+        </header>
+
+        <div class="bento">
+          <figure class="bento-item bento-1">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="Cãozinho Golden Retriever sorrindo após o banho">
+            <figcaption>Banho relaxante para Golden Retriever</figcaption>
+          </figure>
+          <figure class="bento-item bento-2">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=80" alt="Gato Persa recebendo escovação especial">
+            <figcaption>Cuidado felino especial</figcaption>
+          </figure>
+          <figure class="bento-item bento-3">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Poodle com tosa bebê finalizada">
+            <figcaption>Tosa Bebê artística</figcaption>
+          </figure>
+          <figure class="bento-item bento-4">
+            <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80" alt="Dr. Rafael em consulta veterinária com filhote">
+            <figcaption>Check-up de rotina com o Dr. Rafael</figcaption>
+          </figure>
+          <figure class="bento-item bento-5">
+            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1000&q=80" alt="Loja com rações, acessórios e brinquedos sob cuidados da Amanda">
+            <figcaption>Nossa boutique de produtos gerenciada pela Amanda</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AMBIENTE (Grid - Areas) ================= -->
+    <section class="secao secao-suave" id="ambiente">
+      <div class="container ambiente">
+        <h2 class="amb-titulo">Um espaço limpo, seguro e acolhedor</h2>
+        <p class="amb-texto">O Pet Shop Doce Patinha possui estrutura climatizada, secadores silenciosos para não estressar os pets, consultório completo e área de espera confortável com gerência da Amanda Silva.</p>
+        <ul class="amb-numeros">
+          <li><strong>3</strong><span>estações de banho</span></li>
+          <li><strong>3</strong><span>especialistas dedicados</span></li>
+          <li><strong>100%</strong><span>produtos hipoalergênicos</span></li>
+        </ul>
+        <figure class="amb-imagem">
+          <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80" alt="Ambiente limpo e adaptado do Pet Shop Doce Patinha">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= EQUIPE (Grid - Auto-fit) ================= -->
+    <section class="secao" id="equipe">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Quem cuida do seu pet</p>
+          <h2>Nossa Equipe de Especialistas</h2>
+          <p>Profissionais apaixonados por animais e altamente qualificados.</p>
+        </header>
+
+        <div class="equipe">
+          <article class="barbeiro">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Fernanda Lima, tosadora responsável por banho e tosa">
+            <div class="barbeiro-info">
+              <h3>Fernanda Lima</h3>
+              <p class="barbeiro-funcao">Banho & Tosa Especializada</p>
+              <p>5 anos de experiência. Mestre em tosa tesoura, desembolo e banhos terapêuticos.</p>
+            </div>
+          </article>
+          <article class="barbeiro">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Rafael Costa, médico veterinário">
+            <div class="barbeiro-info">
+              <h3>Dr. Rafael Costa</h3>
+              <p class="barbeiro-funcao">Médico Veterinário (CRMV 45892)</p>
+              <p>Especialista em clínica geral, vacinação preventiva e nutrição pet.</p>
+            </div>
+          </article>
+          <article class="barbeiro">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80" alt="Amanda Silva, responsável pela loja e atendimento">
+            <div class="barbeiro-info">
+              <h3>Amanda Silva</h3>
+              <p class="barbeiro-funcao">Gerente & Responsável pela Loja</p>
+              <p>Garante o melhor atendimento, curadoria de produtos e rações de alta qualidade.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AGENDA (Grid - Tabela de Horários) ================= -->
+    <section class="secao secao-suave" id="agenda">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Horários de Atendimento</p>
+          <h2>Agende o Banho ou Consulta</h2>
+          <p>Horários em rosa estão disponíveis para reserva imediata.</p>
+        </header>
+
+        <div class="agenda-rolagem">
+          <div class="agenda">
+            <span class="agenda-canto">Horário</span>
+            <span class="agenda-dia">Seg</span>
+            <span class="agenda-dia">Ter</span>
+            <span class="agenda-dia">Qua</span>
+            <span class="agenda-dia">Qui</span>
+            <span class="agenda-dia">Sex</span>
+            <span class="agenda-dia">Sáb</span>
+
+            <span class="agenda-hora">09:00</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">11:00</span>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">14:00</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">16:00</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ (Flexbox) ================= -->
+  <footer class="rodape" id="contato">
+    <div class="container rodape-conteudo">
+      <div class="rodape-marca">
+        <a href="#inicio" class="logo">Doce<span>Patinha</span> 🐾</a>
+        <p>Pet Shop e Centro Estético Cauteloso. Amor e respeito pelos seus animais.</p>
+      </div>
+      <address class="rodape-contato">
+        <p><strong>Endereço:</strong> Av. das Flores, 1020 &ndash; Jardim Petrópolis</p>
+        <p><strong>Horário:</strong> Seg a Sáb, das 8h às 18h</p>
+        <p><strong>Contato:</strong> <a href="mailto:contato@docepatinha.example">contato@docepatinha.example</a></p>
+      </address>
+      <ul class="rodape-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#clube">Clube Patinha</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+      </ul>
+    </div>
+    <p class="rodape-copy">&copy; 2026 Pet Shop Doce Patinha. Projeto didático para apresentação de Banco de Dados & Front-end.</p>
+  </footer>
+
+</body>
+</html>
